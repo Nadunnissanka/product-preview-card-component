@@ -71,6 +71,7 @@ body {
 }
 
 .price-old {
+    font-family: 'Montserrat', sans-serif;
     color: hsl(228, 12%, 48%);
     font-size: 14px;
     display: flex;
@@ -91,6 +92,10 @@ body {
     background-color: hsl(158, 36%, 37%);
     color: #fff;
 }
+.btn-primary:hover{
+    background-color: hsl(159, 69%, 18%);
+    transition: 0.4s;
+}
 .btn-text {
     display: flex;
     justify-content: center;
@@ -100,4 +105,26 @@ body {
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.25px;
+}
+
+@media (min-width: 740px) {
+    .product {
+        grid-template-columns: 1fr 1fr;
+        width: 580px;
+        height: auto;
+        border-radius: 0 6px 6px 0;
+    }
+    .product-image {
+        height: 100%;
+    }
+    .product-image {
+        background-image: url(./images/image-product-desktop.jpg);
+        border-radius: 6px 0 0 6px;
+    }
+    .button-block {
+        padding: 0px 20px 30px 20px;
+    }
+    .product-subtitle {
+        padding: 30px 20px 16px 20px;
+    }
 }
